@@ -11,7 +11,6 @@ a {
 #main {
   background-color: $primaryColor;
   color: #fbfbfc;
-  border-radius: 3px;
   width: 250px;
   padding: 5px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -25,8 +24,6 @@ a {
 }
 
 #controls {
-  width: 250px;
-  height: 110px;
   text-align: center;
   padding: 5px 0;
 }
@@ -150,9 +147,14 @@ i.fa {
   height: 50px;
 }
 
+#track-art-container {
+	width: 210px;
+	height: 210px;
+	margin: 10px 20px 0;
+}
+
 #track-art {
-  width: 210px;
-  margin: 10px 20px 0;
+  width: 100%;
 }
 
 #track {
@@ -260,12 +262,12 @@ i.fa {
   left: -2px;
   bottom: -160px;
   background: $primaryColor;
-  border: 1px solid #666;
   transition: .2s;
 }
 
 #settings.open {
   transform: translateY(-160px);
+  box-shadow: 0 -1px 0 $secondaryColor;
 }
 
 #settings i.fa {
